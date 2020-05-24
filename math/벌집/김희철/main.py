@@ -12,7 +12,7 @@ while True:
     break
 
   start = end + 1
-  end = start + ((6 * n) - 1)
+  end = start - 1 + (6 * n)
   n += 1
 
   if start <= target and target <= end:
