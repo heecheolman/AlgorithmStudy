@@ -117,6 +117,9 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+## Cpp
+a.out
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
