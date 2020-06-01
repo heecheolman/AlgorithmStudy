@@ -2,7 +2,7 @@ package beakjoon;
 
 import java.util.Arrays;
 import java.util.Scanner;
-
+// commit test
 public class n2447 {
     static char[][] arr;
     public static void main(String[] args) {
