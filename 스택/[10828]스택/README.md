@@ -1,4 +1,4 @@
-# [괄호(10828)](https://www.acmicpc.net/problem/10828)
+# [스택(10828)](https://www.acmicpc.net/problem/10828)
 
 ## 문제
 정수를 저장하는 스택을 구현한 다음, 입력으로 주어지는 명령을 처리하는 프로그램을 작성하시오.
