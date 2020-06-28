@@ -60,13 +60,6 @@ def get_sequence(at):
         sequence.append(person)
         people = next_people
 
-    str_sequence = ''
-    for index, num in enumerate(sequence):
-        if index != len(sequence)-1:
-            str_sequence += str(num) + ', '
-        else:
-            str_sequence += str(num)
-
     return formatting(sequence)
 
 
