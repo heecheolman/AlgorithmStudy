@@ -1,6 +1,7 @@
 package beakjoon;
 
 import java.io.*;
+import java.util.Collections;
 import java.util.LinkedList;
 
 public class n5430 {
@@ -20,13 +21,13 @@ public class n5430 {
                     .replace("]","")
                     .split(",");
 
-            if (arr[0].equals("")) {
-                writer.write(formatResult(list) + "\n");
+            if (isError(function, n)) {
+                writer.write("error" + "\n");
                 continue;
             }
 
-            if (isError(function, n)) {
-                writer.write("error" + "\n");
+            if (arr[0].equals("")) {
+                writer.write(formatResult(list) + "\n");
                 continue;
             }
 
@@ -47,6 +48,9 @@ public class n5430 {
                 }
             }
 
+            if (isReverse) {
+                Collections.reverse(list);
+            }
             writer.write(formatResult(list) + "\n");
         }
 
@@ -76,4 +80,5 @@ public class n5430 {
 
         return n < count;
     }
+
 }
