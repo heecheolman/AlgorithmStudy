@@ -9,7 +9,7 @@
 
 ## 목표💡
 
- - [프로그래머스 Level3 클리어] (https://programmers.co.kr/skill_checks)
+ - [프로그래머스 Level3 클리어](https://programmers.co.kr/skill_checks)
 
  > 성공적인 취업 및 이직(...)
 
