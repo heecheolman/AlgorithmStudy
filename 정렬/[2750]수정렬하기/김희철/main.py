@@ -7,9 +7,11 @@ for _ in range(N):
     numbers.append(int(sys.stdin.readline()))
 
 for i in range(0, len(numbers)):
-    for j in range(0, len(numbers) - i - 1):
-        if numbers[j] > numbers[j+1]:
-            numbers[j+1], numbers[j] = numbers[j], numbers[j+1]
+    minIndex = i
+    for j in range(i, len(numbers)):
+        if numbers[j] < numbers[minIndex]:
+            minIndex = j
+    numbers[i], numbers[minIndex] = numbers[minIndex], numbers[i]
 
 
 for num in numbers:
