@@ -7,27 +7,29 @@ for _ in range(N):
     numbers.append(int(stdin.readline()))
 
 
-def quick_sort(array):
-    length = len(array)
-    if length <= 1:
-        return array
+def quick_sort(array, left, right):
+    if left >= right:
+        return
 
-    pivot = array[length // 2]
+    pivot = array[(left + right) // 2]
+    start, end = left, right
 
-    small = []
-    big = []
-    equal = []
+    while start <= end:
+        while array[start] < pivot:
+            start += 1
+        while array[end] > pivot:
+            end -= 1
 
-    for v in array:
-        if v < pivot:
-            small.append(v)
-        elif v > pivot:
-            big.append(v)
-        else:
-            equal.append(v)
+        if start <= end:
+            array[start], array[end] = array[end], array[start]
+            start += 1
+            end -= 1
 
-    return quick_sort(small) + equal + quick_sort(big)
+    quick_sort(array, left, end)
+    quick_sort(array, start, right)
+
+    return array
 
 
-for value in quick_sort(numbers):
+for value in quick_sort(numbers, 0, len(numbers) - 1):
     print(value)
