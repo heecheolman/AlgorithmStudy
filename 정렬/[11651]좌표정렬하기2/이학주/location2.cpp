@@ -7,7 +7,7 @@ using namespace std;
 
 int main () {
     vector < pair <int, int> > v;
-    vector < pair <int, int> > output;
+
     int N, a, b;
     cin >> N;
 
